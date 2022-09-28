@@ -1,6 +1,13 @@
-const changeBtn = document.getElementById('change__btn')
-const changeLogo = document.getElementById('change__logo')
+const sign = document.getElementById('sign')
+const res = document.getElementById('res')
+const forgot = document.getElementById('forget')
+const login = document.getElementById('login')
 
-changeBtn.addEventListener('click', () => {
-    changeLogo.src="./logo_1.png"
+forgot.addEventListener('click', function ()    {
+    sign.style.display = 'none'
+    res.style.display = 'flex'
+})
+login.addEventListener('click', function(){
+    res.style.display = 'none'
+    sign.style.display = 'flex'
 })

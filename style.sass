@@ -1,0 +1,134 @@
+@mixin title()
+    font-size: 36px
+    line-height: 42px
+    font-weight: 700
+
+@mixin input
+    width: 298px
+    border: 1px solid #C3C3C3
+    background-color: #fff
+    border-radius: 5px
+    padding: 17px 0px 17px 46px
+
+@mixin p
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+    color: #1A4F8B
+    cursor: pointer
+
+@mixin btn
+    min-width: 344px
+    background-color:#1A4F8B
+    color:#fff
+    font-size: 16px
+    line-height: 20px
+    font-weight: 400
+    text-transform: uppercase
+    padding: 15px 148px
+    border: none
+    border-radius: 8px
+    letter-spacing: -0.408px
+@mixin prase
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color:#B0B0B0
+
+@mixin social
+    padding: 12px 48px
+    border-radius: 5px
+    color:#fff
+    font-size: 16px
+    font-weight: 400
+    line-height: 16px
+    border: none
+    background-color: #385C8E
+
+@mixin cont
+    flex-direction: column
+    justify-content: center
+    align-items: center
+   
+
+.container
+    width: 840px
+    height: 840px
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    &__reset
+        display: none
+        @include cont
+    &__signup 
+        @include cont
+        display: flex
+        padding: 30px 30px 75px 30px
+    &__logo
+        text-align: center
+        
+    h1
+        @include title
+        margin:0
+        margin-top: 36px
+
+        
+    &__input
+        display: flex
+        flex-direction: column
+        margin-top: 36px
+        gap:36px
+        position: relative
+        input
+            @include input
+        p
+            @include p
+            margin: 0
+            margin-top: -26px
+            text-align: right
+        #icon
+            position: absolute
+            top: 15px
+            left: 17px
+        #key
+            position: absolute
+            top: 100px
+            left: 17px
+
+    &__sign
+        @include btn
+        margin: 50px 30px
+    &__p
+        @include prase
+        margin-bottom: 36px
+    &__buttons
+        display: flex
+        gap:14px
+        button
+            @include social
+        #google
+            background-color: #F14436
+    #reset
+        margin-top: 74px
+    #resetbtn
+        margin-top: 36px
+    .container__reset
+        p
+            margin-top: 200px
+            color:#b0b0b0
+            font-weight: 400
+            font-size: 16px
+            line-height: 18px
+            span
+                color:#1A4F8B
+                cursor: pointer
+
+body
+    display: flex
+    width: 100%
+    height: 100vh
+    overflow-y: hidden
+    align-items: center
+    justify-content: center
+    font-family: 'Roboto', sans-serif

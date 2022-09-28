@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/05c592b93c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script  src="./script.js" defer></script>
 </head>
+
 <body>
     <div class="container">
-        <div class="container__logo"><img src="./logo.png" alt="" id="change__logo"></div>
-        <div class="container__search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" class="container__input">
-            <i class="fa-solid fa-keyboard"></i>
-            <i class="fa-solid fa-microphone"></i>
+        <div class="container__signup" id="sign">
+            <div class="container__logo">
+                <img src="./logo.svg" alt="">
+            </div>
+            <h1>Welcome back!</h1>
+            <div class="container__input">
+                <img id="icon" src="./icon.svg" alt="">
+                <input type="mail" placeholder="example@email.com" >
+                <img id="key" src="./key.svg" alt="">
+                <input type="password" placeholder="password">
+                <p id="forget">Forgot Password?</p>
+            </div>
+            <button class="container__sign">LOG IN</button>
+            <p class="container__p">Or connect with social</p>
+            <div class="container__buttons">
+                <button>Facebook</button>
+                <button id="google">Google</button>
+            </div>
         </div>
-        <div class="container__buttons">
-            <button class="container__btn">Пошук Google</button>
-            <button class="container__btn" id="change__btn">Мені пощастить</button>
-        </div>
-        <div class="container__languages">
-            <p> Мова Google:</p>
-            <a href="https://www.google.com/?gl=us&hl=en&pws=0&gws_rd=cr">English</a>
-            <a href="https://www.google.ru/?hl=ru">русский</a>
+        <div class="container__reset" id="res">
+            <div class="container__logo">
+                <img id="reset" src="./reset.svg" alt="">
+            </div>
+            <h1>Forgot Password</h1>
+            <div class="container__input">
+                <img id="icon" src="./icon.svg" alt="">
+                <input type="mail" placeholder="example@email.com" >
+            </div>
+            <button class="container__sign" id="resetbtn">RESET</button>
+            <p>Already have an account? <span id="login">Login here</span> </p>
         </div>
     </div>
 
-    <script src="./script.js"></script>
 </body>
 </html>
